@@ -12,7 +12,6 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'preservim/nerdtree'
 	Plugin 'embark-theme/vim', { 'as': 'embark' }
-	Plugin 'xavierd/clang_complete'
 	Plugin 'morhetz/gruvbox'
 	Plugin 'MarcWeber/vim-addon-mw-utils'
 	Plugin 'tomtom/tlib_vim'
@@ -32,7 +31,6 @@ highlight ColorColumn ctermbg=darkgray
 set termguicolors
 set list
 set lcs=tab:\|-,trail:.
-let g:clang_library_path='/usr/lib/llvm-3.9/lib'
 augroup autoformat_settings
 	autocmd FileType bzl AutoFormatBuffer buildifier
 	autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format-3.9
